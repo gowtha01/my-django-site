@@ -1,5 +1,3 @@
-"""Module URL configuration for the app."""
-
 from django.urls import path
 from .views import home_view
 
