@@ -1,10 +1,9 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
 from telegram.constants import ParseMode
-from app import app as application
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    website_url = "http://127.0.0.1:8000/"  # Change to your public URL if deployed
+    website_url = "https://my-django-site-1.onrender.com/"  # Updated to your Render public URL
     await update.message.reply_text(
         f"Hello! I'm your bot. Visit our website here: {website_url}\nUse /help to see what I can do."
     )
