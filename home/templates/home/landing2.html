@@ -3,17 +3,26 @@
 <head>
     <title>Landing Page 2</title>
     <script>
-        setTimeout(function() {
-            window.location.href = "https://www.cloudflare.com/";
-        }, 3000);
+        // Hide the Next button initially
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("next-btn").style.display = "none";
+            setTimeout(function() {
+                document.getElementById("wait-msg").style.display = "none";
+                document.getElementById("next-btn").style.display = "inline-block";
+            }, 5000); // Show after 5 seconds
+
+            setTimeout(function() {
+                window.location.href = "https://www.cloudflare.com/";
+            }, 10000); // Redirects after 10 seconds
+        });
     </script>
 </head>
 <body>
-    <h1>Loading step 2...</h1>
+    <h1>Welcome to step 2</h1>
+    <p id="wait-msg">Wait for 5 seconds...</p>
     <!-- Google AdSense Ad -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5197735360960981"
      crossorigin="anonymous"></script>
-    <!-- 20041120 -->
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-5197735360960981"
@@ -23,9 +32,6 @@
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-
-    <a href="https://www.cloudflare.com/">
-        <button style="margin-top:20px; padding:10px 20px;">Next</button>
-    </a>
+    <a href="https://www.cloudflare.com/"><button id="next-btn" style="margin-top:20px; padding:10px 20px;">Next</button></a>
 </body>
 </html>
