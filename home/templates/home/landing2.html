@@ -2,36 +2,83 @@
 <html>
 <head>
     <title>Landing Page 2</title>
+    <style>
+        #next-btn {
+            display: none;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 40px;
+            background-color: red;
+            color: black;
+            border: none;
+            padding: 16px 40px;
+            font-size: 1.5em;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: background 0.3s;
+        }
+        #next-btn:hover {
+            background-color: #b30000;
+        }
+        #timer {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        body {
+            min-height: 100vh;
+            position: relative;
+            margin: 0;
+            padding-bottom: 100px; /* for button space */
+            font-family: Arial, sans-serif;
+        }
+        .center-content {
+            text-align: center;
+            margin-top: 80px;
+        }
+    </style>
     <script>
-        // Hide the Next button initially
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("next-btn").style.display = "none";
-            setTimeout(function() {
+        let seconds = 10;
+        function updateTimer() {
+            document.getElementById("timer").textContent = seconds;
+            if (seconds > 0) {
+                seconds--;
+                setTimeout(updateTimer, 1000);
+            } else {
                 document.getElementById("wait-msg").style.display = "none";
-                document.getElementById("next-btn").style.display = "inline-block";
-            }, 5000); // Show after 5 seconds
-
-            setTimeout(function() {
-                window.location.href = "https://www.cloudflare.com/";
-            }, 10000); // Redirects after 10 seconds
+                document.getElementById("next-btn").style.display = "block";
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            updateTimer();
         });
+        function goToCloudflare() {
+            window.location.href = "https://www.cloudflare.com/";
+        }
     </script>
 </head>
 <body>
-    <h1>Welcome to step 2</h1>
-    <p id="wait-msg">Wait for 5 seconds...</p>
-    <!-- Google AdSense Ad -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5197735360960981"
-     crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-5197735360960981"
-         data-ad-slot="9054763284"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <a href="https://www.cloudflare.com/"><button id="next-btn" style="margin-top:20px; padding:10px 20px;">Next</button></a>
+    <div class="center-content">
+        <h1>Welcome to step 2</h1>
+        <p id="wait-msg">Wait for <span id="timer">10</span> seconds...</p>
+        <!-- Google AdSense Ad -->
+        <div style="margin: 30px 0;">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5197735360960981"
+             crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5197735360960981"
+                 data-ad-slot="9054763284"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    <button id="next-btn" onclick="goToCloudflare()">Next</button>
 </body>
 </html>
