@@ -38,7 +38,28 @@
         }
         .center-content {
             text-align: center;
-            margin-top: 80px;
+            margin-top: 40px;
+        }
+        .phone-list {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #f8f8f8;
+            border-radius: 12px;
+            padding: 32px 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            font-size: 1.1em;
+        }
+        .phone-list h2 {
+            color: #b30000;
+            margin-bottom: 18px;
+        }
+        .phone-list h3 {
+            color: #222;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+        .phone-list ul {
+            margin-left: 20px;
         }
     </style>
     <script>
@@ -62,19 +83,63 @@
     <div class="center-content">
         <h1>Welcome to our site</h1>
         <p id="wait-msg">Wait for <span id="timer">10</span> seconds...</p>
-        <!-- Google AdSense Ad -->
-        <div style="margin: 30px 0;">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5197735360960981"
-             crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-5197735360960981"
-                 data-ad-slot="9558994460"
-                 data-ad-format="auto"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+    </div>
+    <div class="phone-list">
+        <h2>Top 5 Gaming Phones in 2025</h2>
+        <h3>1. ASUS ROG Phone 8 Pro</h3>
+        <ul>
+            <li><b>Display:</b> 6.78" FHD+ AMOLED, 165Hz refresh rate</li>
+            <li><b>Processor:</b> Snapdragon 8 Gen 3</li>
+            <li><b>RAM/Storage:</b> Up to 24GB RAM, 1TB storage</li>
+            <li><b>Battery:</b> 6000mAh, 65W fast charging</li>
+            <li><b>Features:</b> AirTrigger controls, advanced cooling, RGB lighting, dual front-facing speakers</li>
+            <li><b>Why it's great:</b> The ROG Phone 8 Pro is built for serious gamers, offering unmatched performance, a super-smooth display, and gaming-centric features like AirTriggers and a robust cooling system.</li>
+        </ul>
+        <h3>2. Nubia RedMagic 9 Pro+</h3>
+        <ul>
+            <li><b>Display:</b> 6.8" AMOLED, 165Hz refresh rate</li>
+            <li><b>Processor:</b> Snapdragon 8 Gen 3</li>
+            <li><b>RAM/Storage:</b> Up to 24GB RAM, 1TB storage</li>
+            <li><b>Battery:</b> 6500mAh, 80W fast charging</li>
+            <li><b>Features:</b> Built-in cooling fan, shoulder triggers, customizable RGB, 3.5mm jack</li>
+            <li><b>Why it's great:</b> RedMagic 9 Pro+ stands out with its active cooling fan and shoulder triggers, making long gaming sessions smooth and comfortable.</li>
+        </ul>
+        <h3>3. Apple iPhone 15 Pro Max</h3>
+        <ul>
+            <li><b>Display:</b> 6.7" Super Retina XDR OLED, 120Hz ProMotion</li>
+            <li><b>Processor:</b> Apple A17 Pro</li>
+            <li><b>RAM/Storage:</b> 8GB RAM, up to 1TB storage</li>
+            <li><b>Battery:</b> 4422mAh, MagSafe fast charging</li>
+            <li><b>Features:</b> Metal frame, advanced GPU, iOS gaming ecosystem</li>
+            <li><b>Why it's great:</b> The iPhone 15 Pro Max delivers top-tier performance, smooth graphics, and access to exclusive iOS games with excellent battery optimization.</li>
+        </ul>
+        <h3>4. Samsung Galaxy S24 Ultra</h3>
+        <ul>
+            <li><b>Display:</b> 6.8" QHD+ Dynamic AMOLED 2X, 120Hz</li>
+            <li><b>Processor:</b> Snapdragon 8 Gen 3 / Exynos 2400 (region-dependent)</li>
+            <li><b>RAM/Storage:</b> Up to 16GB RAM, 1TB storage</li>
+            <li><b>Battery:</b> 5000mAh, 45W fast charging</li>
+            <li><b>Features:</b> S Pen support, vapor chamber cooling, Dolby Atmos speakers</li>
+            <li><b>Why it's great:</b> The S24 Ultra is a powerhouse for both gaming and productivity, with a stunning display and strong thermal management.</li>
+        </ul>
+        <h3>5. OnePlus 12</h3>
+        <ul>
+            <li><b>Display:</b> 6.82" AMOLED, 120Hz refresh rate</li>
+            <li><b>Processor:</b> Snapdragon 8 Gen 3</li>
+            <li><b>RAM/Storage:</b> Up to 16GB RAM, 512GB storage</li>
+            <li><b>Battery:</b> 5400mAh, 100W fast charging</li>
+            <li><b>Features:</b> HyperBoost gaming engine, advanced cooling, stereo speakers</li>
+            <li><b>Why it's great:</b> OnePlus 12 offers flagship performance and a smooth gaming experience at a competitive price, with rapid charging and a large battery.</li>
+        </ul>
+        <h2 style="margin-top:40px;">How to Choose the Best Gaming Phone</h2>
+        <ul>
+            <li><b>Performance:</b> Look for the latest Snapdragon or Apple A-series processors and at least 8GB RAM for smooth gameplay.</li>
+            <li><b>Display:</b> High refresh rates (120Hz or above) and AMOLED panels provide a more immersive experience.</li>
+            <li><b>Cooling:</b> Phones with vapor chamber cooling or built-in fans help prevent overheating during long sessions.</li>
+            <li><b>Battery:</b> A larger battery (5000mAh+) and fast charging keep you gaming longer.</li>
+            <li><b>Features:</b> Shoulder triggers, customizable RGB, and stereo speakers can enhance your gaming sessions.</li>
+        </ul>
+        <p>These phones represent the best options for mobile gamers in 2025, offering a mix of raw power, display quality, battery life, and gaming-specific features. Choose the one that fits your needs and budget for the ultimate gaming experience!</p>
     </div>
     <a href="{% url 'landing2' %}">
         <button id="next-btn">Next</button>
