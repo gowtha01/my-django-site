@@ -13,7 +13,7 @@
             color: black;
             border: none;
             padding: 16px 40px;
-            font-size: 1.5em;
+            font-size: 1.2em;
             border-radius: 8px;
             cursor: pointer;
             font-weight: bold;
@@ -24,9 +24,14 @@
             background-color: #b30000;
         }
         #timer {
-            font-size: 1.2em;
+            font-size: 1.1em;
             font-weight: bold;
             color: #333;
+        }
+        .timer-section {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
         body {
             min-height: 100vh;
@@ -34,19 +39,20 @@
             margin: 0;
             padding-bottom: 100px; /* for button space */
             font-family: Arial, sans-serif;
+            font-size: 0.95em;
         }
         .center-content {
             text-align: center;
-            margin-top: 80px;
+            margin-top: 20px;
         }
         .mf-list {
-            max-width: 800px;
+            max-width: 900px;
             margin: 30px auto;
             background: #f8f8f8;
             border-radius: 12px;
             padding: 32px 24px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            font-size: 1.1em;
+            font-size: 0.98em;
         }
         .mf-list h2 {
             color: #b30000;
@@ -60,9 +66,16 @@
         .mf-list ul {
             margin-left: 20px;
         }
+        .mf-list p {
+            margin-bottom: 18px;
+        }
+        .section-divider {
+            border-top: 2px solid #e0e0e0;
+            margin: 40px 0 30px 0;
+        }
     </style>
     <script>
-        let seconds = 10;
+        let seconds = 20;
         function updateTimer() {
             document.getElementById("timer").textContent = seconds;
             if (seconds > 0) {
@@ -77,14 +90,19 @@
             updateTimer();
         });
         function goToCloudflare() {
-            window.location.href = "https://www.cloudflare.com/";
+            window.location.href = "https://t.me/ournewmain_bot";
         }
     </script>
 </head>
 <body>
     <div class="center-content">
         <h1>Welcome to step 2</h1>
-        <p id="wait-msg">Wait for <span id="timer">10</span> seconds...</p>
+        <div class="timer-section">
+            <p id="wait-msg">
+                Wait for <span id="timer">20</span> seconds...
+            </p>
+            <p style="color:#b30000; font-weight:bold;">Click on a ad and come Back</p>
+        </div>
     </div>
     <div class="mf-list">
         <h2>Top 5 Best Mutual Funds in India (2025)</h2>
@@ -93,41 +111,51 @@
             <li><b>Type:</b> Large Cap Equity</li>
             <li><b>5-Year CAGR:</b> ~14%</li>
             <li><b>Expense Ratio:</b> 1.55%</li>
-            <li><b>Why it's great:</b> Focuses on high-quality bluechip stocks, offering stability and consistent returns. Suitable for long-term wealth creation with lower risk.</li>
             <li><b>Key Holdings:</b> Reliance Industries, HDFC Bank, Infosys, ICICI Bank</li>
+            <li><b>Why it's great:</b> Focuses on high-quality bluechip stocks, offering stability and consistent returns. Suitable for long-term wealth creation with lower risk.</li>
+            <li><b>Investment Strategy:</b> Invests in top 100 companies by market capitalization, with a disciplined approach to risk management and sector allocation.</li>
         </ul>
+        <div class="section-divider"></div>
         <h3>2. Mirae Asset Large Cap Fund</h3>
         <ul>
             <li><b>Type:</b> Large Cap Equity</li>
             <li><b>5-Year CAGR:</b> ~15%</li>
             <li><b>Expense Ratio:</b> 1.60%</li>
-            <li><b>Why it's great:</b> Consistent outperformance in the large-cap segment, diversified portfolio, and strong fund management.</li>
             <li><b>Key Holdings:</b> HDFC Bank, ICICI Bank, Reliance Industries, Infosys</li>
+            <li><b>Why it's great:</b> Consistent outperformance in the large-cap segment, diversified portfolio, and strong fund management.</li>
+            <li><b>Investment Strategy:</b> Focuses on sustainable growth companies with strong fundamentals and robust corporate governance.</li>
         </ul>
+        <div class="section-divider"></div>
         <h3>3. Parag Parikh Flexi Cap Fund</h3>
         <ul>
             <li><b>Type:</b> Flexi Cap Equity (Invests in Indian & Global stocks)</li>
             <li><b>5-Year CAGR:</b> ~18%</li>
             <li><b>Expense Ratio:</b> 0.80%</li>
-            <li><b>Why it's great:</b> Unique mix of Indian and international equities, value investing approach, and low expense ratio. Suitable for investors seeking diversification.</li>
             <li><b>Key Holdings:</b> Alphabet (Google), HDFC Bank, Bajaj Holdings, ITC</li>
+            <li><b>Why it's great:</b> Unique mix of Indian and international equities, value investing approach, and low expense ratio. Suitable for investors seeking diversification.</li>
+            <li><b>Investment Strategy:</b> Value-oriented, invests in undervalued companies globally, with a focus on long-term capital appreciation.</li>
         </ul>
+        <div class="section-divider"></div>
         <h3>4. SBI Small Cap Fund</h3>
         <ul>
             <li><b>Type:</b> Small Cap Equity</li>
             <li><b>5-Year CAGR:</b> ~22%</li>
             <li><b>Expense Ratio:</b> 1.70%</li>
-            <li><b>Why it's great:</b> One of the best-performing small-cap funds, ideal for aggressive investors seeking high growth potential over the long term.</li>
             <li><b>Key Holdings:</b> Elgi Equipments, Blue Star, Hawkins Cookers</li>
+            <li><b>Why it's great:</b> One of the best-performing small-cap funds, ideal for aggressive investors seeking high growth potential over the long term.</li>
+            <li><b>Investment Strategy:</b> Invests in emerging businesses with high growth potential, but comes with higher volatility and risk.</li>
         </ul>
+        <div class="section-divider"></div>
         <h3>5. HDFC Hybrid Equity Fund</h3>
         <ul>
             <li><b>Type:</b> Hybrid (Equity + Debt)</li>
             <li><b>5-Year CAGR:</b> ~13%</li>
             <li><b>Expense Ratio:</b> 1.25%</li>
-            <li><b>Why it's great:</b> Balanced approach with equity and debt, suitable for moderate risk-takers. Offers stability and regular returns.</li>
             <li><b>Key Holdings:</b> ICICI Bank, Infosys, State Bank of India, GOI Securities</li>
+            <li><b>Why it's great:</b> Balanced approach with equity and debt, suitable for moderate risk-takers. Offers stability and regular returns.</li>
+            <li><b>Investment Strategy:</b> Allocates 65-80% to equities and the rest to debt, balancing growth and stability.</li>
         </ul>
+        <div class="section-divider"></div>
         <h2 style="margin-top:40px;">How to Choose the Best Mutual Fund</h2>
         <ul>
             <li><b>Investment Goal:</b> Define your goal (wealth creation, tax saving, regular income, etc.) before choosing a fund.</li>
@@ -136,20 +164,42 @@
             <li><b>Expense Ratio:</b> Lower expense ratios mean more returns in your pocket.</li>
             <li><b>Fund Manager Track Record:</b> Experienced managers often deliver better results.</li>
             <li><b>Diversification:</b> Consider funds with a diversified portfolio to reduce risk.</li>
+            <li><b>Tax Efficiency:</b> ELSS funds offer tax benefits under Section 80C.</li>
+            <li><b>Liquidity:</b> Open-ended funds allow easy entry and exit; check for exit loads.</li>
         </ul>
-        <p>
-            These mutual funds represent some of the best options for Indian investors in 2025, balancing risk and reward across different categories. Always consult a financial advisor and read scheme documents before investing.
-        </p>
-        <h2 style="margin-top:40px;">Mutual Fund Investment Tips</h2>
+        <div class="section-divider"></div>
+        <h2>Mutual Fund Investment Tips</h2>
         <ul>
             <li>Start early and invest regularly (SIP is a great option).</li>
             <li>Review your portfolio at least once a year.</li>
             <li>Don’t chase past returns—focus on consistency and fundamentals.</li>
             <li>Understand exit loads, lock-in periods, and tax implications.</li>
             <li>Stay invested for the long term to benefit from compounding.</li>
+            <li>Use online tools and calculators to plan your investments.</li>
+            <li>Consult a financial advisor for personalized advice.</li>
         </ul>
+        <div class="section-divider"></div>
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+            <li><b>Q:</b> Are mutual funds safe?<br><b>A:</b> Mutual funds are regulated by SEBI and are generally safe, but returns are subject to market risks.</li>
+            <li><b>Q:</b> What is SIP?<br><b>A:</b> Systematic Investment Plan (SIP) allows you to invest a fixed amount regularly in a mutual fund.</li>
+            <li><b>Q:</b> Can I withdraw anytime?<br><b>A:</b> Most open-ended funds allow withdrawal anytime, but check for exit loads and lock-in periods.</li>
+            <li><b>Q:</b> How are mutual funds taxed?<br><b>A:</b> Taxation depends on the type of fund and holding period. Equity funds held for over 1 year are taxed at 10% on gains above ₹1 lakh.</li>
+            <li><b>Q:</b> Should I invest in direct or regular plans?<br><b>A:</b> Direct plans have lower expense ratios and higher returns compared to regular plans.</li>
+        </ul>
+        <div class="section-divider"></div>
+        <h2>Mutual Fund Trends in 2025</h2>
+        <ul>
+            <li>Increasing popularity of passive and index funds.</li>
+            <li>More international and global fund options for Indian investors.</li>
+            <li>Focus on ESG (Environmental, Social, Governance) investing.</li>
+            <li>Greater use of technology and robo-advisors for portfolio management.</li>
+            <li>Rising SIP inflows and retail participation in equity markets.</li>
+        </ul>
+        <div class="section-divider"></div>
         <p>
-            Mutual funds are subject to market risks. Read all scheme-related documents carefully before investing. Past performance is not indicative of future results.
+            These mutual funds represent some of the best options for Indian investors in 2025, balancing risk and reward across different categories. Always consult a financial advisor and read scheme documents before investing.<br>
+            <b>Mutual funds are subject to market risks. Read all scheme-related documents carefully before investing. Past performance is not indicative of future results.</b>
         </p>
     </div>
     <button id="next-btn" onclick="goToCloudflare()">Next</button>
