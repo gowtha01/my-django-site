@@ -1,7 +1,4 @@
 {
-  "builds": [
-    { "src": "manage.py", "use": "@vercel/python", "config": { "runtime": "python3.9", "maxLambdaSize": "50mb" } }
-  ],
   "routes": [
     { "src": "/static/(.*)", "dest": "/static/$1" },
     { "src": "/media/(.*)", "dest": "/media/$1" },
