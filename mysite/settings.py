@@ -27,6 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-!%(@43p*wad--xz&+h^ap
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
+    'my-django-site-1.onrender.com',
     'your-special-ka5j9v4x5-gowthams-projects-436cd05c.vercel.app',
     # add any custom domain here too
 ]
