@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, Messa
 from telegram.constants import ParseMode
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    website_url = "https://my-django-site-1.onrender.com/"  # Updated to your Render public URL
+    website_url = "https://your-special-ka5j9v4x5-gowthams-projects-436cd05c.vercel.app/"  # Updated to your Render public URL
     await update.message.reply_text(
         f"Hello! I'm your bot. Visit our website here: {website_url}\nUse /help to see what I can do."
     )
